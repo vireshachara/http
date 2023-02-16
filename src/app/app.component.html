@@ -1,0 +1,36 @@
+<!-- <app-getmethod></app-getmethod> -->
+<!-- <app-postmethod></app-postmethod> -->
+<!-- <app-putmethod></app-putmethod> -->
+<!-- <app-observables></app-observables>
+<app-rxjs></app-rxjs> -->
+
+<div class="body">
+    <span class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Http Methods
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="/httpmethods/getmethod">Http Get Mothod</a></li>
+            <li><a href="/httpmethods/postmethod">Http Post Mothod</a></li>
+            <li><a href="/httpmethods/putmethod">Http Put Mothod</a></li>
+            <li><a href="/httpmethods/deletemethod">Http Delete Mothod</a></li>
+        </ul>
+    </span>
+    <button class="btn btn-primary" routerLink="/observables"> Observables </button>
+    <button class="btn btn-primary" routerLink="/rxjs"> RxJs </button>
+    <span class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Rxjs Operators
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="/rxjs/ofoperator">Of-Operators</a></li>
+            <li><a href="/rxjs/fromoperator">From-Operators</a></li>
+            <li><a href="/rxjs/fromeventoperator">From Event-Operators</a></li>
+            <li><a href="/rxjs/intervaloperator">Interval-Operators</a></li>
+            <li><a href="/rxjs/debounceoperator">Debounce-Operators</a></li>
+        </ul>
+    </span>
+    <button class="btn btn-primary" routerLink="/interceptors"> Interceptors </button>
+    <button class="btn btn-primary" routerLink="/video"> Video </button>
+    <span style="color: white; font-size:20px; float:right">Date : {{date | date}}</span>
+</div>
+
+<router-outlet></router-outlet> 

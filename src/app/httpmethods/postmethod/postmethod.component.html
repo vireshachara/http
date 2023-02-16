@@ -1,0 +1,14 @@
+<hr>
+<h1> HTTP Post Method</h1>
+
+<form class="form" #registerForm="ngForm" (ngSubmit)="addCustomer(registerForm)">
+  <label>Enter Name</label><br>
+  <input type="text" placeholder="Enter the first name" ngModel name="firstname" #firstname required>
+  <br><br>
+  <label>Email Address</label><br>
+  <input type="email" placeholder="Enter email Address" ngModel name="email" #email required
+    pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+  <br><br>
+  <span *ngIf="isUserCreated" class="bg-success"> The User Added Successfully</span><br>
+  <button [disabled]="registerForm.form.invalid"> Log In</button> 
+</form>
